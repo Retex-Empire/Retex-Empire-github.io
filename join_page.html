@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вступить - Retex Empire | SAMP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #4ecca3;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4ecca3;
+            text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #4ecca3;
+        }
+
+        nav a.active {
+            color: #4ecca3;
+            border-bottom: 2px solid #4ecca3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            flex: 1;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #4ecca3;
+        }
+
+        .join-box {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+        }
+
+        .join-box ul {
+            text-align: left;
+            margin: 1rem 0;
+            list-style-position: inside;
+        }
+
+        .join-box li {
+            padding: 0.5rem 0;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 2px solid #4ecca3;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">👑 Retex Empire</a>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="leaders.html">Руководство</a></li>
+                <li><a href="cars.html">Автопарк</a></li>
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="join.html" class="active">Вступить</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Хочешь к нам?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Заполни анкету и мы свяжемся с тобой в игре!</p>
+        
+        <div class="join-box">
+            <p><strong>Требования:</strong></p>
+            <ul>
+                <li>Минимум 5 уровень</li>
+                <li>Микрофон обязателен</li>
+                <li>Возраст от 16 лет</li>
+                <li>Опыт игры в SAMP</li>
+            </ul>
+            <p style="margin-top: 2rem;"><strong>Контакты:</strong></p>
+            <p>Discord: RetexEmpire#1234</p>
+            <p>VK: vk.com/retex_empire_samp</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Retex Empire | SAMP RP</p>
+        <p style="margin-top: 0.5rem; color: #888;">Все права защищены</p>
+    </footer>
+</body>
+</html>
